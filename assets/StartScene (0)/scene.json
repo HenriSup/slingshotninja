@@ -215,26 +215,34 @@
           "id": "0"
         },
         {
-          "type": "ArcadeBody2D",
+          "type": "CannonBody",
           "config": {
             "formatVersion": 2,
-            "type": "box",
-            "movable": true,
-            "width": 160,
-            "height": 160,
-            "offset": {
+            "mass": 5,
+            "fixedRotation": false,
+            "group": 1,
+            "mask": 1,
+            "shape": "box",
+            "positionOffset": {
               "x": 0,
-              "y": 0
+              "y": 0,
+              "z": 0
             },
-            "bounce": {
+            "orientationOffset": {
               "x": 0,
-              "y": 0
+              "y": 0,
+              "z": 0
             },
-            "tileMapAssetId": null,
-            "tileSetPropertyName": null,
-            "layersIndex": null
+            "halfSize": {
+              "x": 80,
+              "y": 80,
+              "z": 0.5
+            },
+            "radius": 1,
+            "height": 1,
+            "segments": 16
           },
-          "id": "1"
+          "id": "3"
         },
         {
           "type": "Behavior",
@@ -242,7 +250,7 @@
             "behaviorName": "BallBehavior",
             "propertyValues": {}
           },
-          "id": "2"
+          "id": "4"
         }
       ],
       "position": {
