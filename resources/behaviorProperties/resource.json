@@ -1,0 +1,10 @@
+{
+  "behaviors": {
+    "BallBehavior": {
+      "scriptId": "6",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}

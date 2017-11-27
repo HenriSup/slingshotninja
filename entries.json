@@ -1,0 +1,56 @@
+{
+  "nextEntryId": 9,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "StartScene",
+      "type": "scene"
+    },
+    {
+      "id": "1",
+      "name": "Behaviors",
+      "type": null,
+      "children": [
+        {
+          "id": "6",
+          "name": "BallBehavior",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Sprites",
+      "type": null,
+      "children": [
+        {
+          "id": "3",
+          "name": "Ball",
+          "type": "sprite"
+        },
+        {
+          "id": "4",
+          "name": "Background",
+          "type": "sprite"
+        },
+        {
+          "id": "5",
+          "name": "DebugBall",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Font",
+      "type": null,
+      "children": [
+        {
+          "id": "8",
+          "name": "Font4",
+          "type": "font"
+        }
+      ]
+    }
+  ]
+}
