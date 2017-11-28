@@ -12,6 +12,7 @@ class BallBehavior extends Sup.Behavior {
     let velocity = this.cannonBody.velocity;
     this.cannonBody.linearDamping = 0.5;
     let pushForce = 500;
+    let world = new CANNON.World;
     this.debuggerTextRenderers[0].setText(velocity.x +" "+(velocity.y.toFixed(2)));
     
     if(Sup.Input.wasKeyJustPressed('Z')){
@@ -26,8 +27,9 @@ class BallBehavior extends Sup.Behavior {
     if(Sup.Input.wasKeyJustPressed('D')){
       velocity.x = velocity.x + pushForce;
     }
-    //this.body.setCustomGravity(0,-0.5);
-     this.cannonBody.velocity=new CANNON.Vec3(velocity.x,velocity.y,0);
+    //this.cannonBody.
+    world.addBody(this.cannonBody);
+    this.cannonBody.velocity=new CANNON.Vec3(velocity.x,velocity.y,0);
   }
 }
 Sup.registerBehavior(BallBehavior);
